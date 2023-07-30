@@ -36,7 +36,7 @@ class App extends Component {
     const { good, neutral, bad } = this.state;
 
     return (
-      <div>
+      <>
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={['good', 'neutral', 'bad']}
@@ -56,7 +56,7 @@ class App extends Component {
         ) : (
           <Notification message="There is no feedback" />
         )}
-      </div>
+      </>
     );
   }
 }
